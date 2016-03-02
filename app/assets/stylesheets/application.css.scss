@@ -18,6 +18,47 @@
 $primary-color: color("lime", "accent-2") !default;
 @import "materialize";
 
+body {
+  background-color: color("grey", "lighten-5");
+}
+
+main,
+.cell h1,
+.player-move {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+}
+
+a {
+  color: color("grey", "darken-2")
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
 h1 {
   font-family: 'Playfair Display';
   font-size: 5em;
@@ -105,4 +146,21 @@ form {
     font-size: 2em;
     height: auto;
   }
+}
+
+.player-move {
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: $primary-color;
+
+}
+
+.cell {
+  cursor: pointer;
+}
+
+#moves {
+  max-height: 200px;
+  overflow: scroll;
 }

@@ -1,13 +1,14 @@
-.container
-  #game-choice
-    %h2 Who is your opponent?
-    .row
-      = link_to new_human_vs_computer_path do
-        .col.s12.m6.center-align.game-choice
-          %i.material-icons computer
-          %h3 The Computer
+%main
+  .container
+    #game-choice
+      %h2 Who is your opponent?
+      .row
+        = link_to new_human_vs_computer_path do
+          .col.s12.m6.center-align.game-choice
+            %i.material-icons computer
+            %h3 The Computer
 
-      = link_to new_human_vs_human_path do
-        .col.s12.m6.center-align.game-choice
-          %i.material-icons people
-          %h3 Another Person
+        = link_to new_human_vs_human_path do
+          .col.s12.m6.center-align.game-choice
+            %i.material-icons people
+            %h3 Another Person
