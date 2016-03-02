@@ -31,7 +31,7 @@ $(document).on("click", ".marker-choice", function(e) {
     player1.setMarker("X");
   }
   else {
-    player1.setmarker("O");
+    player1.setMarker("O");
   }
   $("#marker-choice").fadeOut("slow", function() {
     $("#player-1").html("<h2>" + player1.name + "</h2>");

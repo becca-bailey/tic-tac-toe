@@ -9,7 +9,8 @@
   %body
     .container.row.navigation
       .col.s10
-        %h1.left tic tac toe
+        = link_to root_path do
+          %h1.left tic tac toe
       .col.s2
         = link_to root_path do
           %i.material-icons.medium.right.tooltipped{:"data-position" => "left", :"data-delay" => "50", :"data-tooltip" => "New Game"} add_circle_outline

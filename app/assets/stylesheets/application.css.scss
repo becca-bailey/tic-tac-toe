@@ -20,8 +20,7 @@ $primary-color: color("lime", "accent-2") !default;
 
 /* Colors*/
 
-$button-color: color("deep-purple", "darken-4");
-$button-accent: color("deep-purple", "darken-2");
+$accent-color: color("lime", "accent-1");
 $background-color: color("grey", "lighten-5");
 $link-color: color("grey", "darken-2");
 $form-bg-color: color("grey", "lighten-3");
@@ -34,6 +33,9 @@ body {
 
 a {
   color: $link-color;
+  h1 {
+    color: black;
+  }
 }
 
 
@@ -58,15 +60,11 @@ h5 {
 }
 
 .btn {
-  background-color: $button-color;
+  color: $link-color;
+  background-color: $primary-color;
   &:hover {
-    background-color: $button-accent;
+    background-color: $accent-color;
   }
-}
-
-input[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid $button-color;
-  box-shadow: 0 1px 0 0 $button-accent;
 }
 
 /* Form Styles */
@@ -131,6 +129,7 @@ main,
   margin: 3em 0;
   padding: 2em;
   border-radius: 10px;
+  cursor: pointer;
   &:hover {
     background-color: $primary-color;
   }
@@ -141,6 +140,14 @@ main,
 }
 
 /* Board Styles */
+
+.board-container {
+  background-color: $form-bg-color;
+  border-radius: 10px;
+  .col {
+    padding: 2em;
+  }
+}
 
 #board {
   padding: 1em;
