@@ -25,6 +25,7 @@ $(document).ready(function() {
   hideFields(["#marker-choice", "#first-player-choice"]);
   $(".cell").height($(".cell").width());
   $('.tooltipped').tooltip({delay: 50});
+  $('.modal-trigger').leanModal();
 });
 
 $(window).resize(function() {

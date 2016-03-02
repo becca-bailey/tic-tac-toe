@@ -18,14 +18,22 @@
 $primary-color: color("lime", "accent-2") !default;
 @import "materialize";
 
+/* Colors*/
+
+$button-color: color("deep-purple", "darken-4");
+$button-accent: color("deep-purple", "darken-2");
+$background-color: color("grey", "lighten-5");
+$link-color: color("grey", "darken-2");
+$form-bg-color: color("grey", "lighten-3");
+
 /* Basic Styling */
 
 body {
-  background-color: color("grey", "lighten-5");
+  background-color: $background-color;
 }
 
 a {
-  color: color("grey", "darken-2")
+  color: $link-color;
 }
 
 
@@ -49,10 +57,22 @@ h5 {
   clear: both;
 }
 
+.btn {
+  background-color: $button-color;
+  &:hover {
+    background-color: $button-accent;
+  }
+}
+
+input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid $button-color;
+  box-shadow: 0 1px 0 0 $button-accent;
+}
+
 /* Form Styles */
 
 form {
-  background-color: color("grey", "lighten-4");
+  background-color: $form-bg-color;
   padding: 2em;
   margin: 3em 0;
   border-radius: 10px;

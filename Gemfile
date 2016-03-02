@@ -38,6 +38,7 @@ group :development, :test do
   gem 'byebug'
   gem 'jasmine'
   gem 'jasmine-jquery-rails'
+  gem 'rspec-rails'
 end
 
 group :development do
