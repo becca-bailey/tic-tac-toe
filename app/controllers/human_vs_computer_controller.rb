@@ -1,0 +1,2 @@
+class HumanVsComputerController < GamesController
+end

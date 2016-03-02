@@ -1,0 +1,10 @@
+.container
+  #com-player-names
+    %h2 What is your name?
+    = form_tag do
+      .input-field
+        = text_field_tag(:player_1)
+      .button-wrapper.center-align
+        = submit_tag("Submit")
+  = render "shared/marker_choice"
+  = render "shared/first_player_choice"

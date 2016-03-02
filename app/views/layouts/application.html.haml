@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %title TicTacToe
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag    'https://fonts.googleapis.com/css?family=Playfair+Display:700|Lato:300,100|Material+Icons'
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .container.row.navigation
+      .col.s10
+        %h1.left tic tac toe
+      .col.s2
+        = link_to root_path do
+          %i.material-icons.medium.right.tooltipped{:"data-position" => "left", :"data-delay" => "50", :"data-tooltip" => "New Game"} add_circle_outline
+    = yield
